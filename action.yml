@@ -10,3 +10,6 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.args }}
+branding:
+  icon: 'check-square'
+  color: 'red'
