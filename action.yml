@@ -1,0 +1,12 @@
+name: 'Promtool action'
+description: 'Docker container action for running promtool'
+author: 'Matsuri Japon'
+inputs:
+  args:
+    description: Arguments to pass to promtool
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.args }}
