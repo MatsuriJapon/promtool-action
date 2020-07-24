@@ -1,2 +1,3 @@
 FROM prom/prometheus:v2.20.0
-ENTRYPOINT [ "/bin/promtool" ]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
